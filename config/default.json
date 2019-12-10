@@ -1,0 +1,11 @@
+{
+  "site": {
+    "name": "Kick",
+    "baseUri": "http://127.0.0.1:9200",
+    "port": 9200
+  },
+  "dev": {
+    "routes": "controllers",
+    "views": "views"
+  }
+}

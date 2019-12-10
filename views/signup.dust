@@ -1,0 +1,76 @@
+{>"page/html" /}
+
+{<content}
+  {#flash}
+    <div class="alert-{type}">{message}</div>
+  {/flash}
+  <div class="materialContainer">
+
+
+     <div class="box back">
+
+        <div class="title">LOGIN</div>
+
+        <div class="mdl-large mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" name="name" id="name">
+          <label class="mdl-textfield__label" for="name">Username</label>
+          <span class="mdl-textfield__error"></span>
+        </div>
+
+        <div class="mdl-large mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="password" name="pass" id="pass">
+          <label class="mdl-textfield__label" for="pass">Password</label>
+          <span class="mdl-textfield__error"></span>
+        </div>
+
+        <div class="button login">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect" type="submit" name="submit">
+            <span>Login</span>
+          </button>
+        </div>
+
+        <a href="" class="pass-forgot">Forgot your password?</a>
+
+     </div>
+
+     <div class="overbox">
+        <div class="active alt-2 "><span class="shape"></span></div>
+
+        <div class="title">CREATE USER</div>
+        <form method="POST" action="/user/signup">
+          <div class="input mdl-large mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+             <label class="mdl-textfield__label" for="regname">Username</label>
+             <input class="mdl-textfield__input" type="text" name="name" id="regname">
+             <span class="mdl-textfield__error"></span>
+          </div>
+
+          <div class="input mdl-large mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+             <label class="mdl-textfield__label" for="email">Email</label>
+             <input class="mdl-textfield__input" type="text" name="email" id="regemail">
+             <span class="mdl-textfield__error"></span>
+          </div>
+
+          <div class="input mdl-large mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+             <label class="mdl-textfield__label" for="regpass">Password</label>
+             <input class="mdl-textfield__input" type="password" name="password" id="regpass">
+             <span class="mdl-textfield__error"></span>
+          </div>
+
+          <div class="input mdl-large mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+             <label class="mdl-textfield__label" for="reregpass">Repeat Password</label>
+             <input class="mdl-textfield__input" type="password" name="repassword" id="repassword">
+             <span class="mdl-textfield__error"></span>
+          </div>
+
+          <div class="button">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" name="submit">
+              <span>Create new user</span>
+            </button>
+          </div>
+        </form>
+
+
+     </div>
+
+  </div>
+{/content}

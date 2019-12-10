@@ -1,0 +1,19 @@
+{
+  "site": {
+    "name": "Kick",
+    "baseUri": "http://127.0.0.1:9700",
+    "port": 9700,
+    "secret": "1AtmTT7G2Z##uuLWMO&0hmIA6FTuU8o0%0t7YNzxz#ysCurxKu"
+  },
+  "dev": {
+    "routes": "controllers",
+    "views": "views"
+  },
+  "db":{
+    "mongo": {
+      "host": "localhost",
+      "port": 27017,
+      "dbname": "kick"
+    }
+  }
+}
